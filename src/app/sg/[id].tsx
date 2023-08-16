@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
+// @ts-ignore
 export default ({txt}) => {
     return <div>
         <div>
@@ -40,6 +41,7 @@ export async function getStaticPaths() {
 }
 
 // 在构建时也会被调用，获取单篇post的数据用于预渲染<Post/>
+// @ts-ignore
 export async function getStaticProps({ params }) {
     // params 包含此片博文的 `id` 信息。
     // 如果路由是 /posts/1，那么 params.id 就是 1
