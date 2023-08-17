@@ -1,6 +1,6 @@
 import {Button, Pagination, Space, Table, Tooltip} from 'antd';
 import React from "react";
-import Link from "next/link";
+import Nav from "@/components/Nav";
 
 const dataSource = [
     {
@@ -37,12 +37,7 @@ const columns = [
 
 export default ()=> {
     return <div>
-        <div>
-            <Link href="/">Home</Link> |
-            <Link href="/antd">Antd Demo</Link> |
-            <Link href="/sg">SG Demo</Link> |
-            <Link href="/csr">CSR Demo</Link>
-        </div>
+        <Nav/>
 
         <Space wrap>
             <Button type="primary">Primary Button</Button>
